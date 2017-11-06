@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nakhlah Institute</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- =======================================================
+        Theme Name: Mentor
+        Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+        Author: BootstrapMade.com
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/nakhlahLogo.png" alt="Logo"></a>
+      </div>
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Nakhlah Institute</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" class="myLink">Home</a></li>
+          <li class=" dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="arabic1.html">Arabic Forensics 1</a></li>
+                  <li><a href="arabic2.html">Arabic Forensics 2</a></li>
+                  <li><a href="arabic3.html">Arabic Forensics 3</a></li>
+              </ul>
+          </li>
+          <li><a href="teachers.html" class="myLink">Teachers</a></li>
+          <li class=" dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="about.html">About Nakhlah</a></li>
+                  <li><a href="phil.html">Our Philosophy</a></li>
+              </ul>
+          </li>
+          <li><a href="blog.html" class="myLink">Blog</a></li>
+          <li><a href="contact.html" class="myLink">Contact Us</a></li>
+          <li><a href="apply.html" class="myLink btn">Apply Now</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation bar-->
+    <!--Modal box-->
+    <div class="modal fade" id="login" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-center form-title">Login</h4>
+          </div>
+          <div class="modal-body padtrbl">
+
+            <div class="login-box-body">
+              <p class="login-box-msg">Sign in to start your session</p>
+              <div class="form-group">
+                <form name="" id="loginForm">
+                 <div class="form-group has-feedback"> <!----- username -------------->
+                      <input class="form-control" placeholder="Username"  id="loginid" type="text" autocomplete="off" />
+            <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                  </div>
+                  <div class="form-group has-feedback"><!----- password -------------->
+                      <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+            <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <div class="checkbox icheck">
+                              <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-xs-12">
+                          <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Modal box-->
+    <div class="container">
+      <div class="row">
+        <div class="about">
+
+              <div class="about-title">
+                <h1>Our Teachers</h1>
+              </div>
+              <br>
+              <div class="about-content">
+                <p><span class="important">Ustadha Nadia Salma </span>was born in Hyderabad, Pakistan. After completing high school, she joined Jaamia Ayesha Siddiqua in Karachi in 1996. She spent six years in studying both conversational and literary Arabic and other Islamic sciences from the classical texts of Tafseer, Aqeedah, Tajweed, Hadith, Fiqh, Seerah, and Islamic history. After graduating in 2002 she started teaching Tafseer, Usul ut-Tafseer, Fiqh, conversational Arabic (Al-Hiwar), Arabic grammar, poetry, literature, and calligraphy at the same institute. She moved to the US in 2010 and co-founded the "Nakhlah Institute" for higher Islamic education. Ustadha Nadia Salma currently resides in Sharon, MA with her husband and kids. </p>
+                <br>
+                <p><span class="important">Ustadha Ayesha Sultana </span>spent her formative years at the Islamic School of Trenton NJ before deciding to dedicate herself to the memorization of the Quran. By the grace of Allah, she completed her memorization in 2011 at the age of fifteen. The following year she enrolled in Nakhlah Institute as a full-time student of the Islamic Sacred Sciences. At Nakhlah Institute, all the sacred sciences, including but not limited to, Arabic grammar, morphology, hiwār, hadith, Islamic jurisprudence, Aqeedah, and Quranic Exegesis (Tafseer) are taught using the original Arabic classical texts/sources to ensure their proper understanding. At Nakhlah, students study under the guidance of respected scholars and teachers possessing an unbroken chain of transmission which connects them to the early generations of Muslim scholars and ultimately to the Prophet Mohammad, peace and blessings be upon him. Ustadha Ayesha Sultana currently resides in Hamilton, NJ with her family and is actively involved in community service as well as pursuing a degree in Liberal Arts.</p>
+              </div>
+
+            </p>
+            </div>
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-youtube fa-fw"></i></a></li>
+        <br>
+        ©2017 Nakhalah Institute. All rights reserved
+      </div>
+    </footer>
+    <!--/ Footer-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
